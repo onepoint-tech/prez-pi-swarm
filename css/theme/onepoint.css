@@ -15,7 +15,7 @@ body {
   background-color: #fff; }
 
 .reveal {
-  font-family: arial, "Source Sans Pro", Helvetica, sans-serif;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;;
   font-size: 38px;
   font-weight: normal;
   color: #222; }
@@ -41,8 +41,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #222;
-/**  font-family: arial "Source Sans Pro", Helvetica, sans-serif;*/
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: none;
@@ -303,4 +302,36 @@ body {
 
 #trends-widget-1 {
 	height: 300px;
+}
+
+
+/*********************************************
+ * Onepoint Theme
+ *********************************************/
+
+.reveal h1 {
+  margin-top: 8rem;
+}
+.onepoint-title {
+  font-weight: bold;
+  color: black;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.onepoint-title:after {
+  content: ".";
+  font-weight: bold;
+  color: #0090cc;
+}
+
+.welcome-message span {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

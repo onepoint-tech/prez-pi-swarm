@@ -4,10 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Reveal JS - Template de présentation</title>
+		<title>Gamification, démontrer des compétences de façons ludiques</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/onepoint.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,59 +25,296 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background="img/onepoint-big-bg-dot.png" data-background-position="left" data-background-size="contain">
-					<p><img class="logo" src="onepoint.png" width="50%"/></p>
-					<p>Template de présentation</p>
-					<p>
-						<small>Pole Transverse</small>
-					</p>
-					<img class="logo onepoint" src="img/onepoint.png" />
+				<section>
+					<p onclick="update('chk-projet')"><input type="checkbox" id="chk-projet" checked="true" > Naissance et contexte</input></p>
+					<p onclick="update('chk-motivation')"><input type="checkbox" id="chk-motivation" checked="true" > Frustration et déceptions</input></p>
+					<p onclick="update('chk-docker')"><input type="checkbox" id="chk-docker" checked="true" > Docker et docker swarm</input></p>
+					<p onclick="update('chk-angular')"><input type="checkbox" id="chk-angular" checked="true" > Programmation evenementielle</input></p>
+					<p onclick="update('chk-java8')"><input type="checkbox" id="chk-java8" checked="true" > Server Send Events</input></p>
 				</section>
 
-				
+				<section data-background="img/onepoint-bg-dot.png" data-background-position="bottom left" data-background-size="30%">
+					<section class="welcome-message slide-projet" data-background="img/onepoint-big-bg-dot.png"
+							 data-background-position="left" data-background-size="contain">
+						<h1 class="onepoint-title">Gamification</h1>
+						<p class="subtitle">Démontrer des compétences de façons ludiques</p>
+						<p>&nbsp;</p>
+						<p>
+							<small>Nicolas Giraud - Anjou Perspective 2017</small>
+						</p>
+						<p>&nbsp;</p>
+						<img class="logo onepoint" src="img/onepoint.png" />
+						<aside class="notes">
+							<p>Mot à la mode - Buzzword</p>
+							<p>Faire de la gamification sans s'en rendre compte</p>
+							<p>Histoire de PiSwarm</p>
+						</aside>
+					</section>
 
+					<section >
+						<img class="logo" src="img/projet/piswarm.png" />
+						<h2 class="onepoint-title">#piswarm</h2>
+						<aside class="notes">
+							<p>Prez trop courte <br/>
+								=> Venez le rencontrer sur le stand</p>
+							<ul>
+								<li>Origine</li>
+								<li>Compétances mis en oeuvre</li>
+								<li>Méthode</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-background="img/onepoint-bg-dot.png" data-background-position="bottom left" data-background-size="30%">
+						<h2 class="onepoint-title">Nicolas Giraud</h2>
+						<h3 class="fragment grow"  data-autoslide="1000">@nicgiro</h3>
+						<ul>
+							<li class="fragment" data-autoslide="1000">10 ans de développement</li>
+							<li class="fragment" data-autoslide="1000">Expertise Java & Javascript</li>
+							<li class="fragment" data-autoslide="1000">Spécialiste du build</li>
+							<li class="fragment">Craftman - Tech addict</li>
+						</ul>
+						<aside class="notes">
+							<p>5 ans d'accompangement technique</p>
+							<p>3 ans de montée en compétances de jeunes développeuses / développeurs</p>
+						</aside>
+					</section>
+				</section>
+
+
+				<section >
+					<h1 class="onepoint-title">o</h1>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<aside class="notes">
+						<p>2 minutes</p>
+					</aside>
+				</section>
 
 				<section data-background="img/onepoint-bg-dot-yellow.png" data-background-position="bottom left" data-background-size="30%">
+					<section class="welcome-message" >
+						<h1 class="onepoint-title">Origines</h1>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+					</section>
 					<section>
-						<h2>Point jaune</h2>
-						
+						<img class="logo" src="img/projet/devfest.png" />
 						<aside class="notes">
-							<p>Commentaires</p>
+							<p>Conférence de développeur</p>
+							<p>Des speaker qui proposent des sujets</p>
+							<p>Une organisation qui sélectionne et organise</p>
+							<p>Des stands pour les sponsors (Silver 2016 et Gold en 2017)</p>
 						</aside>
 					</section>
+					<section >
+						<h2>4 Conférences proposées</h2>
+						<h2>1 conférence retenue</h2>
+						<aside class="notes">
+							<p>25% des confs acceptés</p>
+							<p>80% des participant au CFP sur le carreau</p>
+							<p>Dont les plus moteurs à la participation à l'évènement</p>
+						</aside>
+					</section>
+					<section >
+						<h2 class="onepoint-title">Sentiments de l'échec</h2>
+						<ul>
+							<li class="fragment">Frustration</li>
+							<li class="fragment">Déception</li>
+							<li class="fragment">Motivation</li>
+						</ul>
+						<aside class="notes">
+							<p>Forme de frustration. Constat du manque de visibilité / crédibilité</p>
+							<p>=> ok, alors on anime le stand en démontrant nos savoirs faire.</p>
+						</aside>
+					</section>
+					<section >
+						<h2 class="onepoint-title">Les micro-pouvoirs du cloud</h2>
+						<ul>
+							<li>Container</li>
+							<li>Auto-provisioning</li>
+							<li>Auto-scalling</li>
+							<li>Resilience</li>
+							<li>Monitoring</li>
+						</ul>
+						<aside class="notes">
+							<p>Le sujet sur lequel nous sommes parti</p>
+							<p>Une question : </p>
+						</aside>
+					</section>
+					<section >
+						<h2>Comment transformer cela en animation ?</h2>
+					</section>
+
 				</section>
 
-				<section data-background="img/onepoint-bg-dot-green.png" data-background-position="bottom left" data-background-size="30%">
-					<section>
-						<h2>Point vert</h2>
-						
-						<aside class="notes">
-							<p>Commentaires</p>
-						</aside>
-					</section>
+				<section >
+					<h1 class="onepoint-title">o</h1>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<aside class="notes">
+						<p>4 minutes</p>
+					</aside>
 				</section>
 
 				<section data-background="img/onepoint-bg-dot-rose.png" data-background-position="bottom left" data-background-size="30%">
-					<section>
-						<h2>Point rose</h2>
-						
+					<section class="welcome-message" >
+						<h1 class="onepoint-title">Organisation</h1>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+					</section>
+					<section >
+						<h2>L'Agilité</h2>
+						<ul>
+							<li>Définition des acteurs</li>
+							<li>Construction des User Story</li>
+							<li>Hiérarchisation</li>
+						</ul>
 						<aside class="notes">
-							<p>Commentaires</p>
+							<p>Pour ne pas perdre de vue nos cibles (utilisteurs)</p>
+							<p>Pour définir des composants du jeu</p>
+							<p>Pour définir un Minimum Available Prroduct</p>
+						</aside>
+					</section>
+					<section >
+						<h2>Les forces</h2>
+						<ul>
+							<li>Le groupe</li>
+							<li>La pluralité</li>
+							<li>L'innovation</li>
+						</ul>
+						<aside class="notes">
+							<p>10 acteurs</p>
+							<p>Des technophile, mais pas que...</p>
+							<p>Co-construire, co-laborer, co-exister</p>
+						</aside>
+					</section>
+					<section >
+						<h2>Des attentes</h2>
+						<ul>
+							<li>Un résultat fonctionnel</li>
+							<li>Un produit segmenté</li>
+							<li>Des contributeur heureux </li>
+						</ul>
+						<aside class="notes">
+							<p>Recherche de l'incrémental (amélioration continue)</p>
+							<p>Adaptabilité (aussi pour le dev)</p>
+							<p>Recherche de l'amusement et de l'apprentissage</p>
 						</aside>
 					</section>
 				</section>
 
-				<section data-background="img/onepoint-bg-dot-purple.png" data-background-position="bottom left" data-background-size="30%">
+				<section >
+					<h1 class="onepoint-title">o</h1>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<aside class="notes">
+						<p>6 minutes</p>
+					</aside>
+				</section>
+
+				<section data-background="img/onepoint-bg-dot-green.png" data-background-position="bottom left" data-background-size="30%">
+					<section class="welcome-message" >
+						<h1 class="onepoint-title">Résultats</h1>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+					</section>
+
 					<section>
-						<h2>Point violet</h2>
-						
+						<h2 class="onepoint-title">Les composants</h2>
+						<img class="logo" src="img/projet/products.png" />
 						<aside class="notes">
-							<p>Commentaires</p>
+							<p>Backend</p>
+							<p>Frontend</p>
+							<p>Système</p>
+							<p>IoT</p>
+						</aside>
+					</section>
+
+					<section >
+						<h2>Quelques chiffres</h2>
+						<ul>
+							<li>90 jours de travail</li>
+							<li>~1000 € de matériel</li>
+							<li>Quelques soirées pizza !</li>
+							<li>0L de bières...</li>
+						</ul>
+						<aside class="notes">
+							<p>2/3 d'implicaiton personnel</p>
+							<p>Mise en oeuvre de compétances extra-professionel</p>
+							<p>De bonnes soirées</p>
 						</aside>
 					</section>
 				</section>
+
+				<section >
+					<h1 class="onepoint-title">o</h1>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<aside class="notes">
+						<p>8 minutes</p>
+					</aside>
+				</section>
+
+				<section data-background="img/onepoint-bg-dot-purple.png" data-background-position="bottom left" data-background-size="30%">
+					<section class="welcome-message" >
+						<h1 class="onepoint-title">Demain..</h1>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+					</section>
+
+					<section >
+						<h2>Une présence</h2>
+						<ul>
+							<li>Des présentations</li>
+							<li>Des animations</li>
+							<li>Des démonstrations</li>
+						</ul>
+						<aside class="notes">
+							<p>Sur l'histoire de piswarm, et ce qu'il a dans le ventre.</p>
+							<p>Lors d'évènements</p>
+							<p>visbilité / crédibilité</p>
+						</aside>
+					</section>
+
+					<section >
+						<h2>Un Club ?</h2>
+						<ul>
+							<li>Des jeux techniques</li>
+							<li>Gamification de nos outils</li>
+							<li>Sans segmentation technique</li>
+							<li class="fragment">De bonne soirée...</li>
+						</ul>
+						<aside class="notes">
+							<p>Hackaton, Codingame, dojo, Openspace, etc...</p>
+							<p>Montée en coimpétance / démonstration</p>
+							<p>Pendant tech du club Agile</p>
+							<p>Vecteur de l'artisanat logiciel (software Craftmanship)</p>
+						</aside>
+					</section>
+				</section>
+
 				<section data-background="img/onepoint-big-bg-dot.png" data-background-position="left" data-background-size="contain">
-					<h1>Merci ...</h1>
+					<img class="logo" src="img/projet/piswarm.png" width="9o0%"/>
+					<h3 class="onepoint-title">#piswarm</h3>
+					<img class="logo onepoint" src="img/onepoint.png" />
+					<p>
+						<small>Nicolas Giraud - @nicgiro @onepoint</small>
+					</p>
+					<aside class="notes">
+						<p>9 minutes</p>
+					</aside>
 				</section>
 			</div>
 		</div>
@@ -97,6 +335,29 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
+
+			function update(id){
+
+                var element = document.getElementById(id);
+                if (element.checked) {
+                    element.checked = false;
+				} else {
+                    element.checked = true;
+				}
+                var slide = id.replace("chk", "slide");
+
+
+			    console.log(id + " - " + element);
+
+                Reveal.slide();
+			}
+			
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+			
 		</script>
 	</body>
 </html>
